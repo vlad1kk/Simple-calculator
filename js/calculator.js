@@ -1,29 +1,33 @@
-const OPERATION = {
+//business logic:
+const OPERATIONS = {
     add: '+',
     subtract: '-',
     multiply: '*',
     division: '/',
 };
-function calculate ({a,b,operation}){
+function calculate({ a, b, operation }){
     let result = null;
+
     switch (operation) {
-        case OPERATION.add:
-            result = add(a + b);
+        case OPERATIONS.add:
+            result = add(a, b);
             break;
     
-        case OPERATION.subtract:
-            result = subtract(a - b);
+        case OPERATIONS.subtract:
+            result = subtract(a, b);
             break;
     
-        case OPERATION.multiply:
-            result = multiply(a * b);
+        case OPERATIONS.multiply:
+            result = multiply(a, b);
             break;
     
-        case OPERATION.division:
-            result = division(a / b);
+        case OPERATIONS.division:
+            result = division(a, b);
             break;
     
         default:
         break;
     }
-}
+
+    return result;
+};

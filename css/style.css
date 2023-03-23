@@ -1,0 +1,16 @@
+.wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20%;
+    text-align: center;
+}
+h1{
+    padding-bottom: 20px;
+}
+.calculator__field{
+    margin-bottom: 15px;
+}
+.calculator__result p{
+    font-size: 25px;
+}

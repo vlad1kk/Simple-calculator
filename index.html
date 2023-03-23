@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Simple calculator</title>
 </head>
 <body>
-    <input class="js-input-a" type="number">
-    <input class="js-input-b" type="number">
-    <select class="js-operation">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
-    <button class="btn">Результат</button>
-    <div class="js-output"></div>
-
-    <script src="js/main.js"></script>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calculator__title">
+                <h1>Simple calculator</h1>
+            </div>
+            <div class="calculator__field">
+                <input class="js-input-a" type="number">
+                <input class="js-input-b" type="number">
+                <select class="js-operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <button class="btn">Результат</button>
+                <button class="clear">Очистити</button>
+            </div>
+            <div class="calculator__result">
+                <p class="js-output"></p>
+            </div>
+        </div>
+    </div>
     <script src="js/Math.js"></script>
     <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
